@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config version="1.2" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd">
+<!-- CONFIGURACAO DO BEAN -->
+<managed-bean>
+    <managed-bean-name>login</managed-bean-name>
+    <managed-bean-class>beans.LoginBean</managed-bean-class>
+    <managed-bean-scope>session</managed-bean-scope>
+</managed-bean>
+<!-- REGRA DE NAVEGAÇÃO -->
+<navigation-rule>
+    <from-view-id>/index.jsp</from-view-id>
+    <navigation-case>
+        <from-outcome>sucesso</from-outcome>
+        <to-view-id>/sucesso.jsp</to-view-id>
+    </navigation-case>
+    <navigation-case>
+        <from-outcome>erro</from-outcome>
+        <to-view-id>/erro.jsp</to-view-id>
+    </navigation-case>
+</navigation-rule>
+</faces-config>
