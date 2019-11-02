@@ -32,6 +32,6 @@ com/xml/ns/javaee/web-app_2_5.xsd">
     </session-config>
 
     <welcome-file-list>
-        <welcome-file>faces/index.jsp</welcome-file>
+        <welcome-file>faces/validacaoexplicita.jsp</welcome-file>
     </welcome-file-list>
 </web-app>

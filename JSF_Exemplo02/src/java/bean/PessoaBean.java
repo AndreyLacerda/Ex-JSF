@@ -19,7 +19,6 @@ public class PessoaBean {
         return !nome.equals("") ? "sucesso" : "erro";
     }
 
-    //MÉTODOS SET e GET
     public String getNome() {
         return nome;
     }
@@ -61,15 +60,15 @@ public class PessoaBean {
     }
 
     public HtmlOutputText getDados() {
-
         String info = "Nome: " + getNome() + "<br/>"
-        + "Sexo: " + getSexo() + "<br/>"
-        + "Interesse: " + getInteresse() + "<br/>"
-        + "Observações: " + getObservacoes() + "<br/><br/>"
-        + "Data: " + getData();
+                + "Sexo: " + getSexo() + "<br/>"
+                + "Interesse: " + getInteresse() + "<br/>"
+                + "Observações: " + getObservacoes() + "<br/><br/>"
+                + "Data: " + getData();
 
         HtmlOutputText dados = new HtmlOutputText();
         dados.setValue(info);
         return dados;
     }
+
 }

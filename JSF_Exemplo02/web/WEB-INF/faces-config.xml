@@ -3,8 +3,8 @@
 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd">
 <!-- CONFIGURACAO DO BEAN -->
 <managed-bean>
-    <managed-bean-name>login</managed-bean-name>
-    <managed-bean-class>beans.LoginBean</managed-bean-class>
+    <managed-bean-name>pessoa</managed-bean-name>
+    <managed-bean-class>bean.PessoaBean</managed-bean-class>
     <managed-bean-scope>session</managed-bean-scope>
 </managed-bean>
 <!-- REGRA DE NAVEGAÇÃO -->

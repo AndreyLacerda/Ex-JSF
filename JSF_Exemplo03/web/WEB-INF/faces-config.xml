@@ -3,20 +3,11 @@
 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd">
 <!-- CONFIGURACAO DO BEAN -->
 <managed-bean>
-    <managed-bean-name>funcionario</managed-bean-name>
+    <managed-bean-name>func</managed-bean-name>
     <managed-bean-class>bean.FuncionarioBean</managed-bean-class>
     <managed-bean-scope>session</managed-bean-scope>
 </managed-bean>
-<!-- REGRA DE NAVEGAÇÃO -->
-<navigation-rule>
-    <from-view-id>/index.jsp</from-view-id>
-    <navigation-case>
-        <from-outcome>sucesso</from-outcome>
-        <to-view-id>/sucesso.jsp</to-view-id>
-    </navigation-case>
-    <navigation-case>
-        <from-outcome>erro</from-outcome>
-        <to-view-id>/erro.jsp</to-view-id>
-    </navigation-case>
-</navigation-rule>
+<application>
+2   <message-bundle>bean.Mensagens</message-bundle>
+3</application>
 </faces-config>
